@@ -2,12 +2,12 @@ import azure.cognitiveservices.speech as speechsdk
 
 # Creates an instance of a speech config with specified subscription key and service region.
 # Replace with your own subscription key and service region (e.g., "westus").
-speech_key, service_region = "YourSubscriptionKey", "YourServiceRegion"
+speech_key, service_region = "f859baf260804572ad78e47c5689608b", "westus"
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
 # Creates an audio configuration that points to an audio file.
 # Replace with your own audio filename.
-audio_filename = "narration.wav"
+audio_filename = "media/narration.wav"
 audio_input = speechsdk.AudioConfig(filename=audio_filename)
 
 # Creates a recognizer with the given settings
